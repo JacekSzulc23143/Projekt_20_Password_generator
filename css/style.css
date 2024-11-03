@@ -8,6 +8,10 @@
 body {
 	background: #002339;
 	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
 
 .container {
@@ -69,12 +73,26 @@ body {
 	font-weight: 300;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	padding: 16px 26px;
 	border-radius: 5px;
 	cursor: pointer;
+	height: 70px;
+	transition: background 0.3s, color 0.3s;
+}
+
+.button {
+	display: flex;
+	justify-content: space-between;
 }
 
 .container button:hover {
 	background: #00b963;
+}
+
+.resetBtn:hover {
+	color: #ff0303;
+}
+
+.color-active {
+	color: #019f55;
 }

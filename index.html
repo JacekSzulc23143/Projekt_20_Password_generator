@@ -24,8 +24,12 @@
             <input type="text" id="password" placeholder="Hasło">
             <img src="/img/copy.png" alt="Ikona kopiowania" onclick="copyPassword()">
         </div>
-        <button onclick="createPassword()"><img src="/img/generate.png" alt="Ikona generowania hasła">Generuj
-            Hasło</button>
+        <div class="button">
+            <button onclick="createPassword()"><img src="/img/generate.png" alt="Ikona generowania hasła">Generuj
+                Hasło</button>
+            <button class="resetBtn" onclick="reset()"><img src="/img/power.png"
+                    alt="Ikona resetowania hasła"></img>Wyczyść</button>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
